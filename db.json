@@ -1,0 +1,75 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "VIN": "1234567890",
+      "brand": "Toyota",
+      "model": "Vios",
+      "year": 2027,
+      "price": 100000,
+      "decs": "รถคันนี้มีตำหนิ111"
+    },
+    {
+      "id": "2",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2023,
+      "VIN": "1234567891",
+      "decs": "",
+      "price": 120000,
+      "activeFlag": true
+    },
+    {
+      "id": "3",
+      "VIN": "1234567892",
+      "brand": "Isuzu",
+      "model": "D-Max",
+      "year": 2021,
+      "price": 9999999,
+      "decs": "สีจางหหหห"
+    }
+  ],
+  "roles": [
+    {
+      "id": "d36c326b-e12a-418c-ba84-284c05fb6357",
+      "name": "Muhammad Ali",
+      "email": "muhammad@gmail.com",
+      "online": true,
+      "username": "Admin",
+      "password": "123456",
+      "role": "Admin",
+      "activeFlag": true,
+      "params": {
+        "online": true
+      }
+    },
+    {
+      "id": "30809336-8853-4d0d-8e77-1520bce1633d",
+      "name": "User1",
+      "email": "user1@gmail.com",
+      "online": false,
+      "username": "User1",
+      "password": "123456",
+      "role": "User",
+      "activeFlag": true
+    },
+    {
+      "id": "9a7c866f-4437-4cb5-b766-b4e07d7f5e88",
+      "username": "User2",
+      "password": "123456",
+      "role": "User",
+      "name": "User123",
+      "email": "user2@gmail.com"
+    },
+    {
+      "id": "ifxnrl00iy-6mw9qsaid3g",
+      "username": "test",
+      "password": "123456",
+      "role": "User",
+      "name": "tes",
+      "email": "fsfsf",
+      "activeFlag": true,
+      "online": false
+    }
+  ]
+}
