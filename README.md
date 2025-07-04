@@ -8,3 +8,9 @@
 
 ## ข้อจำกัด
 โปรเจกต์นี้ยังไม่มีระบบ deploy จริง กรุณารันในเครื่องเพื่อทดสอบ
+
+// "scripts": {
+//   "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+//   "dev:client": "vite",
+//   "dev:server": "json-server --watch db.json --port 3001"
+// },
