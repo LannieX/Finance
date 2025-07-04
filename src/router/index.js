@@ -12,7 +12,6 @@ const routes = [
   { path: '/Login', component: Login }
 ]
 
-// เพิ่มตรงนี้
 const router = createRouter({
   history: createWebHistory(),
   routes

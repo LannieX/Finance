@@ -27,7 +27,6 @@ onMounted(() => {
   loadData()
 })
 
-// ฟอร์มสำหรับเพิ่ม/แก้ไข
 const form = reactive({
   id: null as number | null,
   VIN: '',
@@ -51,7 +50,6 @@ const clearForm = () => {
   isEditing.value = false
 }
 
-// เพิ่มข้อมูลใหม่
 const addVehicle = async () => {
   if (!form.brand || !form.model || !form.year) {
     alert('กรุณากรอกข้อมูลให้ครบ')
@@ -66,7 +64,6 @@ const addVehicle = async () => {
   }
 }
 
-// กดแก้ไข: โหลดข้อมูลใส่ฟอร์ม
 const editVehicle = (vehicle: Vehicle) => {
   form.id = vehicle.id
   form.VIN = vehicle.VIN
@@ -78,7 +75,6 @@ const editVehicle = (vehicle: Vehicle) => {
   isEditing.value = true
 }
 
-// อัพเดตข้อมูลที่แก้ไข
 const updateVehicle = async () => {
   if (!form.id || !form.brand || !form.model || !form.year) {
     alert('กรุณากรอกข้อมูลให้ครบ')
@@ -93,7 +89,6 @@ const updateVehicle = async () => {
   }
 }
 
-// ลบข้อมูล
 const deleteVehicle = async (id: number) => {
   if (!confirm('คุณต้องการลบรายการนี้หรือไม่?')) return
   try {

@@ -5,10 +5,10 @@ import router from '../router'
 
 const username = ref('')
 const password = ref('')
-const passwordConfirm = ref('') // รหัสผ่านยืนยันในฟอร์ม reset
+const passwordConfirm = ref('')
 const errorMessage = ref('')
 const showPassword = ref(false)
-const isResetMode = ref(false) // สถานะว่าแสดงฟอร์ม reset password หรือไม่
+const isResetMode = ref(false)
 
 const login = async () => {
   errorMessage.value = ''
@@ -53,7 +53,7 @@ const resetPassword = async () => {
     return
   }
   try {
-    // ตรวจสอบว่ามี username นี้อยู่หรือไม่
+
     const res = await axios.get('http://localhost:3001/roles', {
       params: { username: username.value }
     })
@@ -62,10 +62,10 @@ const resetPassword = async () => {
       return
     }
     const user = res.data[0]
-    // อัพเดตรหัสผ่าน
+
     await axios.patch(`http://localhost:3001/roles/${user.id}`, { password: password.value })
     alert('รีเซ็ตรหัสผ่านสำเร็จ กรุณาเข้าสู่ระบบใหม่')
-    // เคลียร์ข้อมูลและสลับกลับไปหน้า login
+
     clearForm()
     isResetMode.value = false
   } catch (error) {
