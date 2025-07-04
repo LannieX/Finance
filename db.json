@@ -34,7 +34,7 @@
       "id": "d36c326b-e12a-418c-ba84-284c05fb6357",
       "name": "Muhammad Ali",
       "email": "muhammad@gmail.com",
-      "online": true,
+      "online": false,
       "username": "Admin",
       "password": "123456",
       "role": "Admin",
@@ -49,7 +49,7 @@
       "email": "user1@gmail.com",
       "online": false,
       "username": "User1",
-      "password": "123456",
+      "password": "0123456",
       "role": "User",
       "activeFlag": true
     },
